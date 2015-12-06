@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
     }
     t2 = clock();
 
-    std::cout << "\nTempo: " << ((float)t2 - t1)/CLOCKS_PER_SECOND << " s" << std::endl;
+    std::cout << "\nTempo: " << ((float)t2 - t1)/1000.0f << " s" << std::endl;
     
     cv::Mat m;
     cv::merge(out, m);
